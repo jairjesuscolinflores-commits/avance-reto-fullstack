@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Tareas</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; }
+        .input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+        input[type="text"] { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { padding: 10px 15px; background-color: #2563eb; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #1d4ed8; }
+        ul { list-style: none; padding: 0; }
+        li { background: #f9f9f9; padding: 15px; margin-bottom: 10px; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; border-left: 4px solid #2563eb; }
+        .btn-logout { background-color: #ef4444; margin-bottom: 20px; width: 100%; }
+        .btn-logout:hover { background-color: #dc2626; }
+        .btn-delete { background-color: #ef4444; padding: 5px 10px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="logout-btn" class="btn-logout">Cerrar Sesión</button>
+        <h1>Mi Lista de Tareas</h1>
+        
+        <div class="input-group">
+            <input type="text" id="nueva-tarea" placeholder="Escribe una nueva tarea...">
+            <button id="agregar-btn">Agregar</button>
+        </div>
+
+        <ul id="lista-tareas"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
